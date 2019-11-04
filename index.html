@@ -16,7 +16,8 @@
             });
         };
         var getResponse = function () {
-            alert(grecaptcha.getResponse());
+            var x = document.getElementById('example3');
+            x.innerHTML = grecaptcha.getResponse();
         }
     </script>
 </head>
@@ -27,7 +28,8 @@
         <br>
         <input type="submit" value="Submit">
     </form>
-    <button onclick="getResponse()">test...</button>
+    <button onclick="getResponse()"></button>
+    <div id="test">
     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
             async defer>
     </script>
