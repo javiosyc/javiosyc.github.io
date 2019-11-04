@@ -4,11 +4,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title></title>
     <script type="text/javascript">
-        const verifyCallback = function(response) {
+        var verifyCallback = function(response) {
             alert(response);
         };
 
-        const onloadCallback = function() {
+        var onloadCallback = function() {
             grecaptcha.render('example3', {
                 'sitekey' : '6LeqYsAUAAAAAK-U_Gk461spRFfnphMGifP2wzfV',
                 'callback' : verifyCallback,
